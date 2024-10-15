@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- kani kay information about sa website (mostly internal ni siya, so di makita within the body)-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Open+Sans:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Delisyoso! Custom Cakes - A Taste of Joy</title>
+    <script src="script.js" defer></script> <!-- link paras script.js -->
+</head>
+<body>
+    <!-- container section with navigation, contains the href links to the home, custom-cakes section, etc., -->
+    <header>
+        <div class="container">
+            <h1 class="logo">Delisyoso! - Custom Cakes</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#custom-cakes">Custom Cakes</a></li>
+                    <li><a href="#order-form">Order</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="home" class="hero">
+        <div class="hero-section">
+            <h2 style="color: white;">Welcome to Delisyoso! - Custom Cakes</h2>
+            <p>Your destination for delicious, handcrafted cakes for all types of occasions.</p>
+            <div id="store-status"></div> <!-- replace statu with "statu" to display the store operating hours (linking of the javascript) -->
+        </div>
+    </section>
+    <!-- recipe sections, mostly kaning mga information nga naa sa body sa page hehe -->
+    <section id="custom-cakes">
+        <h1>Our Custom Cake Selections</h1>
+        <div class="recipe-section">
+            <div class="recipe-card">
+                <img src="ChocolateCake.jpg" alt="Chocolate Cake">
+                <h2>Chocolate Cake</h2>
+                <p>A rich and moist chocolate cake topped with a drizzle of syrup.</p>
+                <p><strong>Price: ₱600 (Small), ₱800 (Medium), ₱1,000 (Large)</strong></p>
+            </div>
+            <div class="recipe-card">
+                <img src="RedVelvetCake.jpg" alt="Red Velvet Cake">
+                <h2>Red Velvet Cake</h2>
+                <p>A smooth, yet tangy, Behold! Our Red Velvet Cake.</p>
+                <p><strong>Price: ₱650 (Small), ₱850 (Medium), ₱1,050 (Large)</strong></p>
+            </div>
+            <div class="recipe-card">
+                <img src="VanillaCake.jpg" alt="Vanilla Cake">
+                <h2>Vanilla Cake</h2>
+                <p>Classic vanilla cake with layers of buttery cream frosting.</p>
+                <p><strong>Price: ₱500 (Small), ₱700 (Medium), ₱900 (Large)</strong></p>
+            </div>
+            <div class="recipe-card">
+                <img src="BirthdayCake.jpg" alt="Birthday Cake">
+                <h2>Birthday Cake</h2>
+                <p>Custom-designed birthday cakes with a fun touch.</p>
+                <p><strong>Price: ₱750 (Small), ₱950 (Medium), ₱1,200 (Large)</strong></p>
+            </div>
+            <div class="recipe-card">
+                <img src="WeddingCake.jpg" alt="Wedding Cake">
+                <h2>Wedding Cake</h2>
+                <p>Elegance is the name, ready to serve for your big day.</p>
+                <p><strong>Price: ₱2,000 (Small), ₱3,000 (Medium), ₱4,000 (Large)</strong></p>
+            </div>
+            <div class="recipe-card">
+                <img src="AssortedCupcakes.jpg" alt="Cupcakes">
+                <h2>Assorted Cupcakes</h2>
+                <p>A variety of cupcakes in multiple flavors and designs.</p>
+                <p><strong>Price: ₱50 each (Minimum order of 6)</strong></p>
+            </div>
+        </div>
+    </section>
+    <!-- diri kay mostly forms, katung email, name, options -->
+    <section id="order-form">
+        <h1>Order Your Custom Cake</h1>
+        <form id="cake-order-form">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="flavor">Choose a Flavor:</label>
+            <select id="flavor" name="flavor" required>
+                <option value="Vanilla">Vanilla</option>
+                <option value="Chocolate">Chocolate</option>
+                <option value="Red Velvet">Red Velvet</option>
+            </select>
+
+            <label for="size">Choose a Size:</label>
+            <select id="size" name="size" required>
+                <option value="Small">Small (6 inches)</option>
+                <option value="Medium">Medium (8 inches)</option>
+                <option value="Large">Large (10 inches)</option>
+            </select>
+
+            <label for="design">Choose a Design:</label>
+            <select id="design" name="design" required>
+                <option value="Royal Icing">Royal Icing</option>
+                <option value="Birthday Special">Birthday Special</option>
+                <option value="Modernistic Art">Modernistic Art</option>
+            </select>
+
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+
+            <div class="form-buttons">
+                <button type="button">Cancel</button>
+                <button type="submit">Submit Order</button>
+            </div>
+        </form>
+    </section>
+    <!-- kani nga section kay about sa contacts -->
+    <section id="contact">
+        <h1>Contact Us</h1>
+        <p>Have questions or special requests? We'd love to hear from you!</p>
+        <p>Email: <a href="mailto:loniewaynelicayan@gmail.com">loniewaynelicayan@gmail.com</a></p>
+        <p>Phone: <a href="tel:+639054095328">+63 905 409 5328</a></p>
+        <p>Visit Us: Tina-an, Naga, Cebu</p>
+    </section>
+    <!-- footer section, diri nag show sa akong pag own sa rights ani nga webpage -->
+    <footer>
+        <p>&copy; 2024 Delisyoso! All rights reserved. Crafted with love.</p>
+    </footer>
+</body>
+</html>
